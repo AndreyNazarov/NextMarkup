@@ -1,0 +1,139 @@
+/* Logo */
+.logo {
+  width: 145px;
+  height: 31px;
+  color: #000000;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo > .logoDecoration {
+  color: #2196f3;
+}
+
+/* Navigation */
+.nav {
+  text-decoration: none;
+  color: #212121;
+}
+
+.nav:hover {
+  color: #2196f3;
+}
+
+.navList {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Contact */
+.info {
+  width: 122px;
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #757575;
+}
+
+.info > li:hover {
+  color: #2196f3;
+}
+
+/* Hero */
+
+.section {
+  width: 1600px;
+  height: 600px;
+  background-color: #2f303a;
+}
+.heroHead {
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 13.6;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.btnService {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+/* What are we doing */
+
+/*our goals */
+.goals {
+  width: 270px;
+  height: 75px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+}
+
+.goals .goalTitle {
+  width: 270px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+/* AboutHeaders */
+.aboutUs {
+  width: 376px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--header-black);
+}
+
+/* Team */
+
+.aboutMember {
+  width: 130px;
+  height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #757575;
+}
+
+.memberName {
+  width: 151px;
+  height: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #212121;
+}
+
+/* Button */
+
+.btnRadio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: #212121;
+}
+
+.btnRadio:hover,
+.btnRadio:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
