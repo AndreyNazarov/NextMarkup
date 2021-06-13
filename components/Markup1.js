@@ -10,7 +10,7 @@ import s from "../styles/styles.module.css";
 export default function Task1(params) {
   return (
     <>
-      <main>
+      <main className={s.container}>
         <section className={s.section}>
           <h1 className={s.heroHead}>Effective solutions for your business</h1>
           <button type="button" className={s.btnService}>
@@ -18,52 +18,73 @@ export default function Task1(params) {
           </button>
         </section>
         <section>
-          <ul>
-            <li className={s.goals}>
-              <h3 className={s.goalTitle}>Attention to detail</h3>
-              <p>
-                Ideological considerations, as well as the beginning of the
-                daily work of forming a position.
-              </p>
-            </li>
-            <li className={s.goals}>
-              <h3 className={s.goalTitle}>Punctuality</h3>
-              <p>
-                The task of the organization, especially the framework and place
-                of training of personnel entails.
-              </p>
-            </li>
-            <li className={s.goals}>
-              <h3 className={s.goalTitle}>Planning</h3>
-              <p>
-                Likewise, consultation with a broad asset is pretty much
-                conditional.
-              </p>
-            </li>
-            <li className={s.goals}>
-              <h3 className={s.goalTitle}>Modern technologies</h3>
-              <p>
-                The significance of these problems is so obvious that the
-                implementation of planned targets.
-              </p>
-            </li>
-          </ul>
+          <div>
+            {" "}
+            <ul className={s.purpose}>
+              <li className={s.goals}>
+                <h3 className={s.goalTitle}>Attention to detail</h3>
+                <p>
+                  Ideological considerations, as well as the beginning of the
+                  daily work of forming a position.
+                </p>
+              </li>
+              <li className={s.goals}>
+                <h3 className={s.goalTitle}>Punctuality</h3>
+                <p>
+                  The task of the organization, especially the framework and
+                  place of training of personnel entails.
+                </p>
+              </li>
+              <li className={s.goals}>
+                <h3 className={s.goalTitle}>Planning</h3>
+                <p>
+                  Likewise, consultation with a broad asset is pretty much
+                  conditional.
+                </p>
+              </li>
+              <li className={s.goals}>
+                <h3 className={s.goalTitle}>Modern technologies</h3>
+                <p>
+                  The significance of these problems is so obvious that the
+                  implementation of planned targets.
+                </p>
+              </li>
+            </ul>
+          </div>
           <h2 className={s.aboutUs}>What are we doing</h2>
-          <ul>
+          <ul className={s.objects}>
             <li>
-              <img src={comp} width="370" height="294" alt="computer" />
+              <img
+                src={comp}
+                width="370"
+                height="294"
+                alt="computer"
+                className={s.img}
+              />
             </li>
             <li>
-              <img src={phone} width="370" height="294" alt="computer" />
+              <img
+                src={phone}
+                width="370"
+                height="294"
+                alt="computer"
+                className={s.img}
+              />
             </li>
             <li>
-              <img src={tablet} width="370" height="294" alt="computer" />
+              <img
+                src={tablet}
+                width="370"
+                height="294"
+                alt="computer"
+                className={s.img}
+              />
             </li>
           </ul>
         </section>
         <section>
-          <h2 className={s.aboutUs}>Our team</h2>
-          <ul>
+          <h2 className={s.aboutTeam}>Our team</h2>
+          <ul className={s.team}>
             <li>
               <img
                 src={red}

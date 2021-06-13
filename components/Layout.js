@@ -5,13 +5,13 @@ const Layout = ({ children, title }) => {
   return (
     <>
       <Head>
-        <title>{title} | Next Course</title>
+        <title>{title} | Next </title>
         <meta name="keywords" content="next,javascript,nextjs,react" />
         <meta name="description" content="this is test markup in next" />
         <meta charSet="utf-8" />
       </Head>
-      <header>
-        <nav>
+      <header className={s.head}>
+        <nav className={s.siteNav}>
           <ul className={s.navList}>
             <Link href={"/"} exact>
               <a className={s.logo}>
@@ -29,15 +29,14 @@ const Layout = ({ children, title }) => {
             </Link>
           </ul>
         </nav>
-        <div>
-          <ul className={s.info}>
-            <li>info@devstudio.com</li>
-            <li>+38 096 111 11 11</li>
-          </ul>
-        </div>
+
+        <ul className={s.info}>
+          <li className={s.item}>info@devstudio.com</li>
+          <li className={s.item}>+38 096 111 11 11</li>
+        </ul>
       </header>
       <main>{children}</main>
-      <footer>
+      <footer className={s.container}>
         <ul className={s.navList}>
           <li>
             <a className={s.logo}>

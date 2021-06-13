@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import s from "../styles/Home.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { route } from "next/dist/next-server/server/router";
@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <Link href={"./posts"}>
+        {/* <Link href={"./posts"}>
           <button type="button">Posts</button>
         </Link>
         <button type="button" onClick={() => router.push("./posts")}>
           Test button
-        </button>
+        </button> */}
         <Task1></Task1>
       </Layout>
     </>
