@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 import * as s from "../styles/styles.module.css";
+import Facebook from "../images/icons3Edit/Facebook";
+import Instagram from "../images/icons3Edit/Instagram";
+import Twitter from "../images/icons3Edit/Twitter";
+import LinkedIn from "../images/icons3Edit/Linkedin";
 const Layout = ({ children, title }) => {
   return (
     <>
@@ -36,20 +40,45 @@ const Layout = ({ children, title }) => {
         </ul>
       </header>
       <main>{children}</main>
-      <footer className={s.container}>
+      <footer className={s.footer}>
         <ul className={s.navList}>
           <li>
             <a className={s.logo}>
               Web<span className={s.logoDecoration}>Studio</span>
             </a>
 
-            <address>
+            <address style={{ color: "#afb1b8" }}>
               c. Berlin, <br />
               Ivana Franka, h. 26, <br />
               4th floor office 427
             </address>
           </li>
         </ul>
+        <div className={s.joinUs}>
+          <h3 className={s.footerTitle}>Join Us</h3>{" "}
+          <div className={s.socialIcons}>
+            <div className={s.iconGround}>
+              <a className={s.icon}>
+                <Instagram />
+              </a>
+            </div>
+            <div className={s.iconGround}>
+              <a className={s.icon}>
+                <Twitter />
+              </a>
+            </div>
+            <div className={s.iconGround}>
+              <a className={s.icon}>
+                <Facebook />
+              </a>
+            </div>
+            <div className={s.iconGround}>
+              <a className={s.icon}>
+                <LinkedIn />
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
     </>
   );

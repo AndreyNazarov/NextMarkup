@@ -5,18 +5,30 @@ import girl from "../images/markup1_2Img/girl.jpg";
 import red from "../images/markup1_2Img/red.jpg";
 import beard from "../images/markup1_2Img/beard.jpg";
 import smile from "../images/markup1_2Img/smile.jpg";
+import Orange from "../images/icons3Edit/Orange";
+import Yaco from "../images/icons3Edit/Yaco";
+import Window from "../images/icons3Edit/Window";
+import Fooster from "../images/icons3Edit/Fooster";
+import Leaf from "../images/icons3Edit/Leaf";
+import Box from "../images/icons3Edit/Box";
+import Facebook from "../images/icons3Edit/Facebook";
+import Instagram from "../images/icons3Edit/Instagram";
+import Twitter from "../images/icons3Edit/Twitter";
+import LinkedIn from "../images/icons3Edit/Linkedin";
 
 import s from "../styles/styles.module.css";
 export default function Task1(params) {
   return (
-    <>
-      <main className={s.container}>
+    <div>
+      <div className={s.overlay}>
         <section className={s.section}>
           <h1 className={s.heroHead}>Effective solutions for your business</h1>
           <button type="button" className={s.btnService}>
             Order service
           </button>
         </section>
+      </div>
+      <main className={s.container}>
         <section>
           <div>
             {" "}
@@ -82,10 +94,10 @@ export default function Task1(params) {
             </li>
           </ul>
         </section>
-        <section>
+        <section className={s.sectionWithBlue}>
           <h2 className={s.aboutTeam}>Our team</h2>
           <ul className={s.team}>
-            <li>
+            <li className={s.member}>
               <img
                 src={red}
                 width="270"
@@ -94,25 +106,136 @@ export default function Task1(params) {
               />
               <h3 className={s.memberName}>Fred Bran</h3>
               <p className={s.aboutMember}>Product designer</p>
+              <div className={s.socialIcons}>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Instagram />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Twitter />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Facebook />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <LinkedIn />
+                  </a>
+                </div>
+              </div>
             </li>
-            <li>
+            <li className={s.member}>
               <img src={girl} width="270" height="260" alt="girl" />
               <h3 className={s.memberName}>Cindy Howard</h3>
               <p className={s.aboutMember}>Frontend developer</p>
+              <div className={s.socialIcons}>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Instagram />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Twitter />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Facebook />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <LinkedIn />
+                  </a>
+                </div>
+              </div>
             </li>
-            <li>
+            <li className={s.member}>
               <img src={smile} width="270" height="260" alt="dude with smile" />
               <h3 className={s.memberName}>Mykola Tarasov</h3>
               <p className={s.aboutMember}>Marketing</p>
+              <div className={s.socialIcons}>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Instagram />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Twitter />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Facebook />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <LinkedIn />
+                  </a>
+                </div>
+              </div>
             </li>
-            <li>
+            <li className={s.member}>
               <img src={beard} width="270" height="260" alt="dude with beard" />
               <h3 className={s.memberName}>Tugay Yusufli</h3>
               <p className={s.aboutMember}>UI Designer</p>
+              <div className={s.socialIcons}>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Instagram />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Twitter />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <Facebook />
+                  </a>
+                </div>
+                <div className={s.iconGround}>
+                  <a className={s.icon}>
+                    <LinkedIn />
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 className={s.aboutUs}>Regular customers</h2>
+          <ul className={s.customers}>
+            <li className={s.customer}>
+              <Yaco className={s.customerIcon} />
+            </li>
+            <li className={s.customer}>
+              <Window className={s.customerIcon} />
+            </li>
+            <li className={s.customer}>
+              <Orange className={s.customerIcon} />
+            </li>
+            <li className={s.customer}>
+              <Fooster className={s.customerIcon} />
+            </li>
+            <li className={s.customer}>
+              <Leaf className={s.customerIcon} />
+            </li>
+            <li className={s.customer}>
+              <Box className={s.customerIcon} />
             </li>
           </ul>
         </section>
       </main>
-    </>
+    </div>
   );
 }

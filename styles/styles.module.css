@@ -64,6 +64,33 @@
   margin-left: 50px;
 }
 
+.item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.info .item:first-child:before {
+  display: inline-flex;
+  content: "";
+  width: 16px;
+  height: 12px;
+  padding-right: 10px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("../images/icons3Edit/mail.svg");
+}
+.info .item:last-child:before {
+  display: inline-flex;
+  content: "";
+  width: 10px;
+  height: 16px;
+  padding-right: 10px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url("../images/icons3Edit/smartphone.svg");
+}
+
 .info > li:hover {
   color: #2196f3;
 }
@@ -81,8 +108,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2f303a;
+  margin-bottom: 94px;
 }
+
+.sectionWithBlue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 94px;
+  background-color: #f5f4fa;
+}
+/* .overlay {
+ 
+  outline: 1px solid #212121;
+  margin-left: 0;
+  margin-right: auto;
+} */
+.section:first-child {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/icons3Edit/team.jpg");
+}
+
 .heroHead {
   display: block;
   font-weight: 900;
@@ -102,6 +154,7 @@
   color: #fff;
   border-radius: 10px;
   margin-bottom: 200px;
+  cursor: pointer;
 }
 
 /* What are we doing */
@@ -109,15 +162,12 @@
 /* Purpose */
 .purpose {
   display: flex;
-  margin-top: 94px;
   justify-content: space-between;
   padding-left: 0;
 }
 
 /*our goals */
 .goals {
-  width: 270px;
-  height: 75px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -136,6 +186,30 @@
 }
 .goals:nth-child(4n) {
   margin-right: 0;
+}
+
+.purpose .goals::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.goals:nth-child(1):before {
+  background-image: url("../images/icons3Edit/antenna 1.svg");
+}
+.goals:nth-child(2):before {
+  background-image: url("../images/icons3Edit/clock 1.svg");
+}
+.goals:nth-child(3):before {
+  background-image: url("../images/icons3Edit/diagram\ 1.svg");
+}
+.goals:nth-child(4):before {
+  background-image: url("../images/icons3Edit/astronaut\ 1.svg");
 }
 /* AboutHeaders */
 .aboutUs {
@@ -175,6 +249,17 @@
   justify-content: space-between;
   margin-bottom: 60px;
 }
+.member {
+  width: 270px;
+  height: 428px;
+  background-color: #fff;
+  margin-right: 30px;
+}
+
+.member:last-child {
+  margin-right: 0;
+}
+
 .aboutMember {
   font-weight: 400;
   font-size: 16px;
@@ -212,6 +297,7 @@
   align-items: center;
   padding: 13px;
   justify-content: center;
+  cursor: pointer;
 }
 .btnRadio:last-child {
   margin-right: 0px;
@@ -232,10 +318,109 @@
 }
 
 .products .item {
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .products .item:nth-child(3n) {
   margin-right: 0;
+}
+.products .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/* Customers */
+.customers {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-right: 30px;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+.customers:last-child {
+  margin-right: 0;
+}
+
+.customer {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  --svg-color: #afb1b8;
+  cursor: pointer;
+}
+
+.customer:hover {
+  border: 1px solid #2196f3;
+  --svg-color: #757575;
+}
+
+.customerIcon:hover {
+  fill: #2196f3;
+}
+
+/* SocialIcons */
+.socialIcons {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.iconGround {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iconGround:last-child {
+  margin-right: 32;
+}
+
+.iconGround:first-child {
+  margin-right: 32;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  --svg-color: #afb1b8;
+}
+
+.iconGround:hover {
+  display: flex;
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+.iconGround:hover .icon {
+  --svg-color: #fff;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  background-color: #2f303a;
+  justify-content: space-around;
+}
+.joinUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
