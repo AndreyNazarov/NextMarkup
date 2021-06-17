@@ -22,6 +22,20 @@
   color: #2196f3;
 }
 
+.logoFooter {
+  display: flex;
+  align-items: center;
+  width: 145px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logoFooter > .logoDecoration {
+  color: #2196f3;
+}
 /* Navigation */
 .siteNav {
   display: flex;
@@ -358,7 +372,7 @@
 
 .customer:hover {
   border: 1px solid #2196f3;
-  --svg-color: #757575;
+  --svg-color: #2196f3;
 }
 
 .customerIcon:hover {

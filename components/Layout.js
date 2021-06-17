@@ -43,7 +43,7 @@ const Layout = ({ children, title }) => {
       <footer className={s.footer}>
         <ul className={s.navList}>
           <li>
-            <a className={s.logo}>
+            <a className={s.logoFooter}>
               Web<span className={s.logoDecoration}>Studio</span>
             </a>
 
