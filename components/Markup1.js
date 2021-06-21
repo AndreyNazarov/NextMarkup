@@ -15,15 +15,29 @@ import Facebook from "../images/icons3Edit/Facebook";
 import Instagram from "../images/icons3Edit/Instagram";
 import Twitter from "../images/icons3Edit/Twitter";
 import LinkedIn from "../images/icons3Edit/Linkedin";
-
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 import s from "../styles/styles.module.css";
+import { useState } from "react";
 export default function Task1(params) {
+  const [open, setOpen] = useState(false);
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
+
   return (
     <div>
       <div className={s.overlay}>
         <section className={s.section}>
+          <Modal open={open} onClose={onCloseModal} center>
+            <h2>Simple centered modal</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              pulvinar risus non risus hendrerit venenatis. Pellentesque sit
+              amet hendrerit risus, sed porttitor quam.
+            </p>
+          </Modal>
           <h1 className={s.heroHead}>Effective solutions for your business</h1>
-          <button type="button" className={s.btnService}>
+          <button type="button" className={s.btnService} onClick={onOpenModal}>
             Order service
           </button>
         </section>
@@ -65,7 +79,7 @@ export default function Task1(params) {
           </div>
           <h2 className={s.aboutUs}>What are we doing</h2>
           <ul className={s.objects}>
-            <li>
+            <li className={s.appImg}>
               <img
                 src={comp}
                 width="370"
@@ -73,8 +87,9 @@ export default function Task1(params) {
                 alt="computer"
                 className={s.img}
               />
+              <p className={s.aboutImg}>desktop applications</p>
             </li>
-            <li>
+            <li className={s.appImg}>
               <img
                 src={phone}
                 width="370"
@@ -82,8 +97,9 @@ export default function Task1(params) {
                 alt="computer"
                 className={s.img}
               />
+              <p className={s.aboutImg}>mobile applications</p>
             </li>
-            <li>
+            <li className={s.appImg}>
               <img
                 src={tablet}
                 width="370"
@@ -91,6 +107,7 @@ export default function Task1(params) {
                 alt="computer"
                 className={s.img}
               />
+              <p className={s.aboutImg}>design solutions</p>
             </li>
           </ul>
         </section>
@@ -185,7 +202,7 @@ export default function Task1(params) {
             </li>
             <li className={s.member}>
               <img src={beard} width="270" height="260" alt="dude with beard" />
-              <h3 className={s.memberName}>Tugay Yusufli</h3>
+              <h3 className={s.memberName}>Tony Schwarz</h3>
               <p className={s.aboutMember}>UI Designer</p>
               <div className={s.socialIcons}>
                 <div className={s.iconGround}>
