@@ -15,6 +15,9 @@ import Facebook from "../images/icons3Edit/Facebook";
 import Instagram from "../images/icons3Edit/Instagram";
 import Twitter from "../images/icons3Edit/Twitter";
 import LinkedIn from "../images/icons3Edit/Linkedin";
+import Email from "../images/icons3Edit/Email";
+import Phone from "../images/icons3Edit/Phone";
+import Person from "../images/icons3Edit/Person";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import s from "../styles/styles.module.css";
@@ -29,12 +32,71 @@ export default function Task1(params) {
       <div className={s.overlay}>
         <section className={s.section}>
           <Modal open={open} onClose={onCloseModal} center>
-            <h2>Simple centered modal</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              pulvinar risus non risus hendrerit venenatis. Pellentesque sit
-              amet hendrerit risus, sed porttitor quam.
-            </p>
+            <h2 className={s.modalName}>
+              Leave your details, we will call you back
+            </h2>
+            <form className={s.form} autoComplete="off">
+              <div className={s.formGroup} role="group">
+                <div className={s.inputForm}>
+                  <input
+                    type="text"
+                    name="username"
+                    className={s.input}
+                    placeholder=" "
+                  />
+                  <label className={s.formLabel}>Name</label>
+                  <a className={s.formIcon}>
+                    <Person />
+                  </a>
+                </div>
+                <div className={s.inputForm}>
+                  <input
+                    type="tel"
+                    name="phone"
+                    className={s.input}
+                    placeholder=" "
+                  />
+                  <label className={s.formLabel}>Phone</label>
+                  <a className={s.formIcon}>
+                    <Phone />
+                  </a>
+                </div>
+                <div className={s.inputForm}>
+                  <input
+                    type="email"
+                    name="email"
+                    className={s.input}
+                    placeholder=" "
+                  />
+                  <label className={s.formLabel}>Email</label>
+                  <a className={s.formIcon}>
+                    <Email />
+                  </a>
+                </div>
+              </div>
+              <label>
+                <textarea
+                  name="feedback"
+                  rows="5"
+                  placeholder="Type your message here..."
+                  className={s.textarea}
+                ></textarea>
+              </label>
+              <label className={s.modalCheckbox}>
+                <input
+                  type="checkbox"
+                  name="hobby"
+                  value="reading"
+                  className={s.checkBox}
+                />
+                <span className={s.checkBoxIcon}></span> I agree to the
+                newsletter and accept the{" "}
+                <span className={s.checkBoxSpan}>Terms and Conditions</span>
+              </label>
+              <button type="submit" className={s.btnModal}>
+                Send{" "}
+              </button>
+            </form>
           </Modal>
           <h1 className={s.heroHead}>Effective solutions for your business</h1>
           <button type="button" className={s.btnService} onClick={onOpenModal}>

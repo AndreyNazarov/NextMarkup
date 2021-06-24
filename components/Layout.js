@@ -5,6 +5,7 @@ import Facebook from "../images/icons3Edit/Facebook";
 import Instagram from "../images/icons3Edit/Instagram";
 import Twitter from "../images/icons3Edit/Twitter";
 import LinkedIn from "../images/icons3Edit/Linkedin";
+import Telegram from "../images/icons3Edit/Telegram";
 const Layout = ({ children, title }) => {
   return (
     <>
@@ -78,6 +79,23 @@ const Layout = ({ children, title }) => {
               </a>
             </div>
           </div>
+        </div>
+        <div>
+          <h3 className={s.footerTitle}>Subscribe to the newsletter</h3>
+          <label className={s.newsLetter}>
+            <input
+              type="email"
+              name="newsletter"
+              placeholder="E-mail"
+              className={s.newsLetterInput}
+            />
+            <button type="submit" className={s.btnService}>
+              Subscribe{" "}
+              <a className={s.iconSend}>
+                <Telegram />
+              </a>
+            </button>
+          </label>
         </div>
       </footer>
     </>
