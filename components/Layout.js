@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import * as s from "../styles/styles.module.css";
+import * as s from "../sass/styles.module.scss";
 import Facebook from "../images/icons3Edit/Facebook";
 import Instagram from "../images/icons3Edit/Instagram";
 import Twitter from "../images/icons3Edit/Twitter";
@@ -29,8 +29,11 @@ const Layout = ({ children, title }) => {
             <Link href={"/portfolio"} exact>
               <a className={s.nav}>Portfolio</a>
             </Link>
-            <Link href={"/contacts"} exact>
-              <a className={s.nav}>Contacts</a>
+            <Link
+              href={"https://www.linkedin.com/in/andrey-nazarov-3087241b2/"}
+              exact
+            >
+              <a className={s.nav}>Contact me</a>
             </Link>
           </ul>
         </nav>

@@ -8,7 +8,7 @@ import book from "../../images/markup2Img/book.jpg";
 import rope from "../../images/markup2Img/rope.jpg";
 import app from "../../images/markup2Img/app.jpg";
 import Layout from "../../components/Layout";
-import s from "../../styles/styles.module.css";
+import s from "../../sass/styles.module.scss";
 export default function Task2(params) {
   return (
     <>

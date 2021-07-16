@@ -20,7 +20,7 @@ import Phone from "../images/icons3Edit/Phone";
 import Person from "../images/icons3Edit/Person";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
-import s from "../styles/styles.module.css";
+import s from "../sass/styles.module.scss";
 import { useState } from "react";
 export default function Task1(params) {
   const [open, setOpen] = useState(false);
